@@ -25,15 +25,25 @@ class MainActivity : AppCompatActivity() {
             val inputEmail = emailEdt.text.toString()
 
             //입력한 아이디 admin@TJE.com이면 관리자입니다. 토스트
+            //student이면, 학생입니다.
+            //parent이면, 학부모입니다.
+            //teacher이면, 선생님입니다.
 
             //입력한 아이디는 ?입니다.
 
-            if(inputEmail.== "admin@tje.com") {
-            Toast.makeText(this, inputEmail,"로그인 버튼 눌림", Toast.LENGTH_SHORT).show()
-        }
-            else{
-            val formatteredStr = "입력한 아이디는 ${inputEmail}입니다."
-            Toast.makeText(this, inputEmail,"로그인 버튼 눌림", Toast.LENGTH_SHORT).show()
+            when(inputEmail){
+                "student"->{Toast.makeText(this, "학생입니다.", Toast.LENGTH_SHORT).show()
+                "parent"->{Toast.makeText(this, "학부모입니다.", Toast.LENGTH_SHORT).show()
+                "teacher"->{Toast.makeText(this, "선생님입니다.", Toast.LENGTH_SHORT).show()
+
+
+
+//            if(inputEmail.== "admin@tje.com") {
+//            Toast.makeText(this, inputEmail,"로그인 버튼 눌림", Toast.LENGTH_SHORT).show()
+//        }
+//            else{
+//            val formatteredStr = "입력한 아이디는 ${inputEmail}입니다."
+//            Toast.makeText(this, inputEmail,"로그인 버튼 눌림", Toast.LENGTH_SHORT).show()
 
         }
 
