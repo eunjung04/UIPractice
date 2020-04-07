@@ -24,7 +24,21 @@ class MainActivity : AppCompatActivity() {
             Log.d("로그인버튼", "버튼 클릭됨")
             val inputEmail = emailEdt.text.toString()
 
+            //입력한 아이디 admin@TJE.com이면 관리자입니다. 토스트
+
             //입력한 아이디는 ?입니다.
+
+            if(inputEmail.== "admin@tje.com") {
+            Toast.makeText(this, inputEmail,"로그인 버튼 눌림", Toast.LENGTH_SHORT).show()
+        }
+            else{
+            val formatteredStr = "입력한 아이디는 ${inputEmail}입니다."
+            Toast.makeText(this, inputEmail,"로그인 버튼 눌림", Toast.LENGTH_SHORT).show()
+
+        }
+
+
+
             val formatteredStr = "입력한 아이디는 ${inputEmail}입니다/"
 
             Toast.makeText(this, inputEmail,"로그인 버튼 눌림", Toast.LENGTH_SHORT).show()
