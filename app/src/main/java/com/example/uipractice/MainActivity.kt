@@ -33,8 +33,8 @@ class MainActivity : AppCompatActivity() {
 
             when(inputEmail){
                 "student"->{Toast.makeText(this, "학생입니다.", Toast.LENGTH_SHORT).show()
-                "parent"->{Toast.makeText(this, "학부모입니다.", Toast.LENGTH_SHORT).show()
-                "teacher"->{Toast.makeText(this, "선생님입니다.", Toast.LENGTH_SHORT).show()
+                "parent" ->{Toast.makeText(this, "학부모입니다.", Toast.LENGTH_SHORT).show()
+                "teacher" ->{Toast.makeText(this, "선생님입니다.", Toast.LENGTH_SHORT).show()
 
 
 
@@ -56,6 +56,13 @@ class MainActivity : AppCompatActivity() {
 
 
         loginBtn.setOnLongClickListener{
+
+            //로그인 0부터 5까지의 숫자를 출력
+
+            for(i in 0..5) {
+                Log.d("for문 연습", "${i}")
+
+        }
 
             Log.d("로그인버튼", "버튼 길게 누름")
             return@setOnLongClickListener true
